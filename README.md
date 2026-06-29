@@ -20,7 +20,7 @@ Users can take a picture of their fridge, and the app uses AI to detect the avai
 ---
 
 # Design
-
+## Main colors
 | Gebruik         | Kleur         | Hex       |
 | --------------- | ------------- | --------- |
 | Primary color   | Fresh Green   | `#4CAF50` |
@@ -31,5 +31,5 @@ Users can take a picture of their fridge, and the app uses AI to detect the avai
 | Light text      | Gray          | `#757575` |
 | Error / warning | Red           | `#E53935` |
 
-
+## Figma
 https://www.figma.com/design/owuayff6ExAOQdGgezcnyk/Untitled?node-id=0-1&p=f&t=1aN2JI21907l4V8u-0
