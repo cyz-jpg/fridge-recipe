@@ -19,6 +19,59 @@ Users can take a picture of their fridge, and the app uses AI to detect the avai
 
 ---
 
+# Backend REST API
+
+The backend uses the root route `/` for the main functionality.
+
+## Endpoints
+
+| Method | Endpoint | Description |
+|---|---|---|
+| `GET` | `/` | Check if the backend is running |
+| `POST` | `/` | Upload a fridge image and get recommended recipes |
+| `GET` | `/:recipeId` | returns the recipe from the backend |
+
+
+### Example Response (GET /)
+
+```json
+{
+  "message": "Fridge Recipe API is running"
+}
+```
+### Example Response (POST /)
+```json
+{
+  "detected_ingredients": [
+    "eggs",
+    "cheese",
+    "tomato"
+  ],
+  "recipes": [
+    {
+      "id": 1,
+      "name": "Cheese Omelette",
+      "match_score": 0.95,
+      "time_minutes": 15,
+      "difficulty": "easy",
+      "filters" : ["vegetarian"],
+      "source" : "https://recipe1.com"
+    },
+    {
+      "id": 2,
+      "name": "Tomato Pasta",
+      "match_score": 0.67,
+      "time_minutes": 25,
+      "difficulty": "easy",
+      "filters" : [],
+      "source" : "https://recipe2.com"
+    }
+  ]
+}
+```
+
+---
+
 # Design
 ## Main colors
 | Gebruik         | Kleur         | Hex       |
